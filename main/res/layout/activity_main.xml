@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/linLayout">
+
+    <!-- Game Grid -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Menú"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/play_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/one"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+            <Button
+                android:id="@+id/two"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+            <Button
+                android:id="@+id/three"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/four"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+            <Button
+                android:id="@+id/five"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+            <Button
+                android:id="@+id/six"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/seven"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text=""
+                android:textSize="70sp" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Game Information -->
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <!-- Score Tracking -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humano: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/human_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maquina: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/computer_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empate: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tie_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Jugar de Nuevo"
+        android:textSize="18sp" />
+</LinearLayout>
